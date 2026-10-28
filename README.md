@@ -127,7 +127,7 @@ $\Delta v_{\text{total}} = \Delta v_{\text{LEOP}} + \Delta v_{\text{drag}} + \De
 ### Installation & Execution
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/vietnam-earth-observation-constellation.git
+git clone https://github.com/caokhanhtan0-creator/vietnam-earth-observation-constellation.git
 cd vietnam-earth-observation-constellation
 
 # Install dependencies
