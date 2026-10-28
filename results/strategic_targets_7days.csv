@@ -1,0 +1,6 @@
+target_name,lat,lon,passes_geometric,passes_optical,optical_mean_revisit_min,worst_case_gap_hours,mean_pass_duration_min,coverage_percentage
+Hanoi (Capital),21.0285,105.8542,14,8,1029.0,44.66,0.5,0.04
+Da Nang (Central),16.0544,108.2022,15,9,1077.75,44.44,0.5,0.04
+Ho Chi Minh City (South),10.8231,106.6297,15,7,1200.58,67.81,0.5,0.03
+Paracel Is. (Hoang Sa),16.5,112.0,16,7,1278.58,91.78,0.5,0.03
+Spratly Is. (Truong Sa),8.65,111.92,15,10,959.67,68.05,0.5,0.05

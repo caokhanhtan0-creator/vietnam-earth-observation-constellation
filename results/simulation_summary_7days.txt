@@ -1,0 +1,18 @@
+================================================================================
+VEOC CAPSTONE 7-DAY VERIFICATION RUN OUTPUT SUMMARY
+================================================================================
+Constellation Architecture : Walker Delta 97.4°: 18/3/1 (500.0 km SSO)
+Epoch Date / Time          : 2026-03-20 12:00:00 UTC (Vernal Equinox)
+Simulation Horizon         : 7.0 Days (168 Hours, 20161 steps @ dt=30s)
+Spacecraft Pointing Model  : LVLH Frame | Roll <= ±30.0° | Pitch <= ±3.0°
+Ground Elevation Mask      : >= 10.0 degrees
+Solar Elevation Mask       : >= 10.0 degrees (Optical Daylight Required)
+--------------------------------------------------------------------------------
+Vietnam Grid Average (132 Nodes):
+  - Geometric Passes (24/7)     : 14.7 passes
+  - Optical Passes (Daylight)   : 7.4 passes
+  - Daytime Mean Revisit Time   : 238.76 minutes
+  - 7-Day Continuous Revisit    : 1163.74 minutes
+  - Worst-Case Gap (Overnight)  : 53.37 hours
+  - Mean Target Contact Pass    : 0.50 minutes
+================================================================================
