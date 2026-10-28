@@ -1,0 +1,14 @@
+# Core Numerical, Scientific & Optimization Libraries
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Astrodynamics & Space Flight Mechanics
+astropy>=5.2.0
+poliastro>=0.17.0
+
+# Plotting & Visualization
+matplotlib>=3.7.0
+
+# Data Processing & Documentation
+pandas>=2.0.0
+python-docx>=0.8.11

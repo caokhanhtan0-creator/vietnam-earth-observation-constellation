@@ -1,0 +1,582 @@
+                                                                               8 Sep 2026 09:53:27
+Civil Air Patrol Use Only
+Satellite-Satellite3
+
+
+               Astrogator MCS Segment Summary Astrogator MCS Target Sequence Summary              
+--------------------------------------------------------------------------------------------------
+MCS Segment Type: TargeterSequence                                                                
+Name: Sequence.Target Sequence                                                                    
+User Comment:  Sequence that runs targeting profiles                                              
+                                                                                                  
+Sequence Start: 1 Jul 2009 15:00:00.000 UTCG;   2455014.125 UTC Julian Date                       
+Sequence Stop:  18 Jan 2010 15:00:00.000 UTCG;   2455215.125 UTC Julian Date                      
+                                                                                                  
+***<<<< Start of Sequence: Sequence.Target Sequence >>>>***                                       
+                                                                                                  
+                                                                                                  
+***--------------------------------------------------------------------------***                  
+MCS Segment Type: InitialState                                                                    
+Name: Sequence.Target Sequence.Initial State                                                      
+User Comment:  Initializes state data                                                             
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 1 Jul 2009 15:00:00.000  UTC Julian Date: 2455014.125                         
+Julian Ephemeris Date: 2455014.12576602                                                           
+Time past epoch: -5.42297e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)        
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    -5397.6053192359122477 km              Vx:        6.4464130910963702 km/sec        
+         Y:     1054.9575080962333686 km              Vy:       -1.2599461221267434 km/sec        
+         Z:     3961.8308057598342202 km              Vz:        9.1181034685553382 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:   -45974.6760668980277842 km            RAAN:         168.9410000000001 deg           
+       ecc:        1.1474320338905073                  w:         35.76775824525334 deg           
+       inc:                        90 deg             TA:                         0 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         168.9410000000001 deg     Horiz. FPA:                         0 deg           
+      Decl:         35.76775824525334 deg        Azimuth:     6.188789457641545e-15 deg           
+       |R|:     6778.1400000000039654 km             |V|:       11.2375939077278364 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:                         0 deg       Mean Anom:                         0 deg          
+ Long Peri:         204.7087582452534 deg        Arg. Lat:         35.76775824525334 deg          
+ True Long:         204.7087582452534 deg        Vert FPA:                        90 deg          
+  Ang. Mom:         76169.98476972639 km^2/sec          p:    14555.5949661946142442 km           
+        C3:         8.669999999999872 km^2/sec^2   Energy:         4.334999999999936 km^2/sec^2   
+   Vel. RA:                   348.941 deg       Vel. Decl:         54.23224175474666 deg          
+ Rad. Peri:     6778.1400000000048749 km        Vel. Peri:       11.2375939077278346 km/sec       
+  Rad. Apo:   -98727.4921337960695382 km       Excess Vel:         2.944486372867069 km/sec       
+               Time Past Periapsis:                           0 sec                               
+          Time Past Ascending Node:           404.7543167046167 sec                               
+   Beta Angle (Orbit plane to Sun):            58.7420990970603 deg                               
+Mean Sidereal Greenwich Hour Angle:            144.792790594365 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:         35.88608418877641 deg                                                         
+ Longitude:         24.27816947395231 deg                                                         
+  Altitude:      407.3123211714805620 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:         35.71447978668777 deg                                                         
+ Longitude:         24.27816947395231 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+***--------------------------------------------------------------------------***                  
+MCS Segment Type: Propagate                                                                       
+Name: Sequence.Target Sequence.Propagate (SOI)                                                    
+User Comment:  Propagates until stopping conditions are met                                       
+                                                                                                  
+Propagator model used: CisLunar  (For Earth-centered orbits within Moon's orbit)                  
+                                                                                                  
+Stopping Condition Information (Gregorian Date [Julian Date]):                                    
+  2 Jul 2009 15:00:00.000 [2455015.125]:  Stopped on: Duration; Run Sequence STOP                 
+                                                                                                  
+Propagation Statistics:                                                                           
+  Number of steps:    63                                                                          
+  Average step size:  1257.64 sec                                                                 
+  Largest step size:  7772.51 sec                                                                 
+  Smallest step size:  60 sec                                                                     
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 2 Jul 2009 15:00:00.000  UTC Julian Date: 2455015.125                         
+Julian Ephemeris Date: 2455015.12576602                                                           
+Time past epoch: -5.4221e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:   328164.4113491236930713 km              Vx:        3.2445653366326890 km/sec        
+         Y:   -64118.3181373583211098 km              Vy:       -0.6336275425354296 km/sec        
+         Z:   -12710.5667841488066188 km              Vz:       -0.3532683981265198 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:   -45969.2847481123826583 km            RAAN:         168.9416351055881 deg           
+       ecc:        1.1472055334992621                  w:         35.68257443815591 deg           
+       inc:          89.9231596581244 deg             TA:          146.494393717156 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         348.9445560793806 deg     Horiz. FPA:         86.07740404152712 deg           
+      Decl:        -2.176966196627916 deg        Azimuth:         179.9231041599153 deg           
+       |R|:   334611.1147359792375937 km             |V|:        3.3246784276757895 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         152.6764629543859 deg       Mean Anom:         317.1000482488632 deg          
+ Long Peri:         204.6242095437441 deg        Arg. Lat:         182.1769681553119 deg          
+ True Long:            351.1186032609 deg        Vert FPA:         3.922595958472838 deg          
+  Ang. Mom:         76102.97554712894 km^2/sec          p:    14529.9961669182048354 km           
+        C3:         8.671016825345918 km^2/sec^2   Energy:         4.335508412672959 km^2/sec^2   
+   Vel. RA:         348.9498463754212 deg       Vel. Decl:        -6.099558607647368 deg          
+ Rad. Peri:     6766.9330859253768722 km        Vel. Peri:       11.2463023619099189 km/sec       
+  Rad. Apo:   -98705.5025821501330938 km       Excess Vel:         2.944659033801014 km/sec       
+               Time Past Periapsis:           86398.54080629568 sec                               
+          Time Past Ascending Node:           86801.20442483434 sec                               
+   Beta Angle (Orbit plane to Sun):            58.1640755987568 deg                               
+Mean Sidereal Greenwich Hour Angle:            145.778437962668 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:        -2.123935518494382 deg                                                         
+ Longitude:        -156.7117214604311 deg                                                         
+  Altitude:   328233.0070555976708420 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:        -2.123664743077915 deg                                                         
+ Longitude:        -156.7117214604311 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+***--------------------------------------------------------------------------***                  
+MCS Segment Type: Propagate                                                                       
+Name: Sequence.Target Sequence.Propagate (TCM)                                                    
+User Comment:  Propagates until stopping conditions are met                                       
+                                                                                                  
+Propagator model used: Heliocentric  (Heliocentric)                                               
+                                                                                                  
+Stopping Condition Information (Gregorian Date [Julian Date]):                                    
+  10 Oct 2009 15:00:00.000 [2455115.125]:  Stopped on: Maximum_Propagation_Time; Run Sequence STOP
+                                                                                                  
+Propagation Statistics:                                                                           
+  Number of steps:    109                                                                         
+  Average step size:  79107.8 sec                                                                 
+  Largest step size:  86400 sec                                                                   
+  Smallest step size:  60 sec                                                                     
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 10 Oct 2009 15:00:00.000  UTC Julian Date: 2455115.125                        
+Julian Ephemeris Date: 2455115.12576602                                                           
+Time past epoch: -5.3357e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    4.1445216886039950e+07 km              Vx:       10.1404345701986713 km/sec        
+         Y:   -1.4926278924740352e+07 km              Vy:       -1.5893909722747195 km/sec        
+         Z:   -6.9510138401112156e+06 km              Vz:       -0.7076018231514208 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:    -3766.1586235966228742 km            RAAN:         359.3234772717364 deg           
+       ecc:     2448.8236923656045292                  w:         260.8556194945404 deg           
+       inc:         25.71125329370416 deg             TA:         78.08879559478528 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         340.1937799280988 deg     Horiz. FPA:         78.06590403420846 deg           
+      Decl:        -8.967012717126732 deg        Azimuth:         65.80274887520309 deg           
+       |R|:    4.4596147800852224e+07 km             |V|:       10.2885993835582852 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         129.3939241047189 deg       Mean Anom:         663718.0984931368 deg          
+ Long Peri:         260.1790967662768 deg        Arg. Lat:         338.9444150893257 deg          
+ True Long:         338.2678923610621 deg        Vert FPA:         11.93409596579158 deg          
+  Ang. Mom:         94880217.97753602 km^2/sec          p:    2.2584660793620201e+10 km           
+        C3:         105.8374012721186 km^2/sec^2   Energy:          52.9187006360593 km^2/sec^2   
+   Vel. RA:         351.0920514440191 deg       Vel. Decl:        -3.943649290368989 deg          
+ Rad. Peri:    9.2188923080468476e+06 km        Vel. Peri:       10.2919325670740740 km/sec       
+  Rad. Apo:   -9.2264246252940409e+06 km       Excess Vel:         10.28773061817418 km/sec       
+               Time Past Periapsis:           4240724.426757011 sec                               
+         Time Past Descending Node:           9794759.045855606 sec                               
+   Beta Angle (Orbit plane to Sun):           0.955874961808704 deg                               
+Mean Sidereal Greenwich Hour Angle:            244.343174796022 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:        -8.914642329099921 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+  Altitude:    4.4589770176532380e+07 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:        -8.914633930363831 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+***--------------------------------------------------------------------------***                  
+MCS Segment Type: Maneuver:Impulsive                                                              
+Name: Sequence.Target Sequence.Maneuver                                                           
+User Comment:  Maneuvers satellite with impulsive or finite burn                                  
+                                                                                                  
+Maneuver Summary:                                                                                 
+  Maneuver Start: 10 Oct 2009 15:00:00.000 UTCG;   2455115.125 UTC Julian Date                    
+  Maneuver Stop:  10 Oct 2009 15:00:00.000 UTCG;   2455115.125 UTC Julian Date                    
+  Duration:  0 sec                                                                                
+  Fuel Used:                        0 kg                                                          
+  DeltaV Magnitude:                        0 m/sec                                                
+  Maneuver Direction Specification:  Thrust Vector                                                
+                                                                                                  
+DeltaV vector with respect to VNC(Sun) axes:                                                      
+                                                                                                  
+       X (Velocity):                         0 m/sec                                              
+         Y (Normal):                         0 m/sec                                              
+      Z (Co-Normal):                         0 m/sec                                              
+            Azimuth:                         0 deg                                                
+          Elevation:                         0 deg                                                
+          Magnitude:                         0 m/sec                                              
+                                                                                                  
+DeltaV vector with respect to Earth Inertial axes:                                                
+                                                                                                  
+              X:                         0 m/sec                                                  
+              Y:                         0 m/sec                                                  
+              Z:                         0 m/sec                                                  
+        Azimuth:                         0 deg                                                    
+      Elevation:                         0 deg                                                    
+      Magnitude:                         0 m/sec                                                  
+                                                                                                  
+DeltaV vector with respect to spacecraft body axes:                                               
+                                                                                                  
+              X:                         0 m/sec                                                  
+              Y:                         0 m/sec                                                  
+              Z:                         0 m/sec                                                  
+        Azimuth:                         0 deg                                                    
+      Elevation:                         0 deg                                                    
+      Magnitude:                         0 m/sec                                                  
+                                                                                                  
+Attitude with respect to Earth Inertial axes:                                                     
+  ---  -----------------------                                                                    
+  qx:                        0                                                                    
+  qy:                        0                                                                    
+  qz:                        0                                                                    
+  qs:                        1                                                                    
+                                                                                                  
+  Estimated Equivalent Finite Burn Duration:  -0 sec                                              
+  Estimated Fuel Used:  -0 kg  (Update mass OFF)                                                  
+                                                                                                  
+----------------------------------------                                                          
+Satellite State at Beginning of Segment:                                                          
+----------------------------------------                                                          
+                                                                                                  
+UTC Gregorian Date: 10 Oct 2009 15:00:00.000  UTC Julian Date: 2455115.125                        
+Julian Ephemeris Date: 2455115.12576602                                                           
+Time past epoch: -5.3357e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    4.1445216886039950e+07 km              Vx:       10.1404345701986713 km/sec        
+         Y:   -1.4926278924740352e+07 km              Vy:       -1.5893909722747195 km/sec        
+         Z:   -6.9510138401112156e+06 km              Vz:       -0.7076018231514208 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:    -3766.1586235966228742 km            RAAN:         359.3234772717364 deg           
+       ecc:     2448.8236923656045292                  w:         260.8556194945404 deg           
+       inc:         25.71125329370416 deg             TA:         78.08879559478528 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         340.1937799280988 deg     Horiz. FPA:         78.06590403420846 deg           
+      Decl:        -8.967012717126732 deg        Azimuth:         65.80274887520309 deg           
+       |R|:    4.4596147800852224e+07 km             |V|:       10.2885993835582852 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         129.3939241047189 deg       Mean Anom:         663718.0984931368 deg          
+ Long Peri:         260.1790967662768 deg        Arg. Lat:         338.9444150893257 deg          
+ True Long:         338.2678923610621 deg        Vert FPA:         11.93409596579158 deg          
+  Ang. Mom:         94880217.97753602 km^2/sec          p:    2.2584660793620201e+10 km           
+        C3:         105.8374012721186 km^2/sec^2   Energy:          52.9187006360593 km^2/sec^2   
+   Vel. RA:         351.0920514440191 deg       Vel. Decl:        -3.943649290368989 deg          
+ Rad. Peri:    9.2188923080468476e+06 km        Vel. Peri:       10.2919325670740740 km/sec       
+  Rad. Apo:   -9.2264246252940409e+06 km       Excess Vel:         10.28773061817418 km/sec       
+               Time Past Periapsis:           4240724.426757011 sec                               
+         Time Past Descending Node:           9794759.045855606 sec                               
+   Beta Angle (Orbit plane to Sun):           0.955874961808704 deg                               
+Mean Sidereal Greenwich Hour Angle:            244.343174796022 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:        -8.914642329099921 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+  Altitude:    4.4589770176532380e+07 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:        -8.914633930363831 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 10 Oct 2009 15:00:00.000  UTC Julian Date: 2455115.125                        
+Julian Ephemeris Date: 2455115.12576602                                                           
+Time past epoch: -5.3357e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    4.1445216886039950e+07 km              Vx:       10.1404345701986713 km/sec        
+         Y:   -1.4926278924740352e+07 km              Vy:       -1.5893909722747195 km/sec        
+         Z:   -6.9510138401112156e+06 km              Vz:       -0.7076018231514208 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:    -3766.1586235966228742 km            RAAN:         359.3234772717364 deg           
+       ecc:     2448.8236923656045292                  w:         260.8556194945404 deg           
+       inc:         25.71125329370416 deg             TA:         78.08879559478528 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         340.1937799280988 deg     Horiz. FPA:         78.06590403420846 deg           
+      Decl:        -8.967012717126732 deg        Azimuth:         65.80274887520309 deg           
+       |R|:    4.4596147800852224e+07 km             |V|:       10.2885993835582852 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         129.3939241047189 deg       Mean Anom:         663718.0984931368 deg          
+ Long Peri:         260.1790967662768 deg        Arg. Lat:         338.9444150893257 deg          
+ True Long:         338.2678923610621 deg        Vert FPA:         11.93409596579158 deg          
+  Ang. Mom:         94880217.97753602 km^2/sec          p:    2.2584660793620201e+10 km           
+        C3:         105.8374012721186 km^2/sec^2   Energy:          52.9187006360593 km^2/sec^2   
+   Vel. RA:         351.0920514440191 deg       Vel. Decl:        -3.943649290368989 deg          
+ Rad. Peri:    9.2188923080468476e+06 km        Vel. Peri:       10.2919325670740740 km/sec       
+  Rad. Apo:   -9.2264246252940409e+06 km       Excess Vel:         10.28773061817418 km/sec       
+               Time Past Periapsis:           4240724.426757011 sec                               
+         Time Past Descending Node:           9794759.045855606 sec                               
+   Beta Angle (Orbit plane to Sun):           0.955874961808704 deg                               
+Mean Sidereal Greenwich Hour Angle:            244.343174796022 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:        -8.914642329099921 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+  Altitude:    4.4589770176532380e+07 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:        -8.914633930363831 deg                                                         
+ Longitude:         95.97900576280787 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+***--------------------------------------------------------------------------***                  
+MCS Segment Type: Propagate                                                                       
+Name: Sequence.Target Sequence.PropagatetoMars                                                    
+User Comment:  Propagates until stopping conditions are met                                       
+                                                                                                  
+Propagator model used: Heliocentric  (Heliocentric)                                               
+                                                                                                  
+Stopping Condition Information (Gregorian Date [Julian Date]):                                    
+  18 Jan 2010 15:00:00.000 [2455215.125]:  Stopped on: Maximum_Propagation_Time; Run Sequence STOP
+                                                                                                  
+Propagation Statistics:                                                                           
+  Number of steps:    102                                                                         
+  Average step size:  83955.7 sec                                                                 
+  Largest step size:  86400 sec                                                                   
+  Smallest step size:  60 sec                                                                     
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 18 Jan 2010 15:00:00.000  UTC Julian Date: 2455215.125                        
+Julian Ephemeris Date: 2455215.12576602                                                           
+Time past epoch: -5.2493e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    1.5286273745322439e+08 km              Vx:        6.4881128446457046 km/sec        
+         Y:    6.3740589857420243e+07 km              Vy:       22.3624618223490472 km/sec        
+         Z:    2.7308745949857078e+07 km              Vz:        9.7406871247810880 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:     -625.6957472838555532 km            RAAN:        0.4449007187793312 deg           
+       ecc:   207612.1118931792734656                  w:         344.6965052335596 deg           
+       inc:         23.58506004502113 deg             TA:         39.29597881293811 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         22.63512367234605 deg     Horiz. FPA:         39.29580403120988 deg           
+      Decl:         9.363154000798724 deg        Azimuth:         68.25502715330227 deg           
+       |R|:    1.6785603028315398e+08 km             |V|:       25.2399741026759266 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         42.79692564329712 deg       Mean Anom:         9734690.985211955 deg          
+ Long Peri:         345.1414059523389 deg        Arg. Lat:         23.99248404649771 deg          
+ True Long:         24.43738476527702 deg        Vert FPA:         50.70419596879012 deg          
+  Ang. Mom:         3278711285.355376 km^2/sec          p:    2.6969231775717199e+13 km           
+        C3:         637.0515433903347 km^2/sec^2   Energy:         318.5257716951674 km^2/sec^2   
+   Vel. RA:         73.82075365806003 deg       Vel. Decl:         22.70105466333412 deg          
+ Rad. Peri:    1.2990138980043495e+08 km        Vel. Peri:       25.2400015919182898 km/sec       
+  Rad. Apo:   -1.2990264119192952e+08 km       Excess Vel:         25.23988001933319 km/sec       
+               Time Past Periapsis:           4211874.815015531 sec                               
+          Time Past Ascending Node:           2803574.144663556 sec                               
+   Beta Angle (Orbit plane to Sun):           0.213316598654403 deg                               
+Mean Sidereal Greenwich Hour Angle:            342.907911635192 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:         9.416865351994272 deg                                                         
+ Longitude:         39.85950646463364 deg                                                         
+  Altitude:    1.6784965271769449e+08 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:         9.416862999312412 deg                                                         
+ Longitude:         39.85950646463364 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
+                                                                                                  
+                                                                                                  
+User-selected results:                                                                            
+    Delta Right Asc =        -61.90870974155563 deg                                               
+    Delta Declination =        0.6149655168047787 deg                                             
+    Epoch = 18 Jan 2010 15:00:00.000 UTCG                                                         
+                                                                                                  
+                                                                                                  
+***<<<< End of Sequence: Sequence.Target Sequence >>>>***                                         
+                                                                                                  
+                                                                                                  
+----------------------------------                                                                
+Satellite State at End of Segment:                                                                
+----------------------------------                                                                
+                                                                                                  
+UTC Gregorian Date: 18 Jan 2010 15:00:00.000  UTC Julian Date: 2455215.125                        
+Julian Ephemeris Date: 2455215.12576602                                                           
+Time past epoch: -5.2493e+08 sec   (Epoch in UTC Gregorian Date: 7 Sep 2026 05:00:00.000)         
+                                                                                                  
+State Vector in Coordinate System: Earth Inertial                                                 
+                                                                                                  
+Parameter Set Type:  Cartesian                                                                    
+         X:    1.5286273745322439e+08 km              Vx:        6.4881128446457046 km/sec        
+         Y:    6.3740589857420243e+07 km              Vy:       22.3624618223490472 km/sec        
+         Z:    2.7308745949857078e+07 km              Vz:        9.7406871247810880 km/sec        
+                                                                                                  
+Parameter Set Type:  Keplerian                                                                    
+       sma:     -625.6957472838555532 km            RAAN:        0.4449007187793312 deg           
+       ecc:   207612.1118931792734656                  w:         344.6965052335596 deg           
+       inc:         23.58506004502113 deg             TA:         39.29597881293811 deg           
+                                                                                                  
+Parameter Set Type:  Spherical                                                                    
+ Right Asc:         22.63512367234605 deg     Horiz. FPA:         39.29580403120988 deg           
+      Decl:         9.363154000798724 deg        Azimuth:         68.25502715330227 deg           
+       |R|:    1.6785603028315398e+08 km             |V|:       25.2399741026759266 km/sec        
+                                                                                                  
+                                                                                                  
+Other Hyperbolic Orbit Parameters :                                                               
+ Ecc. Anom:         42.79692564329712 deg       Mean Anom:         9734690.985211955 deg          
+ Long Peri:         345.1414059523389 deg        Arg. Lat:         23.99248404649771 deg          
+ True Long:         24.43738476527702 deg        Vert FPA:         50.70419596879012 deg          
+  Ang. Mom:         3278711285.355376 km^2/sec          p:    2.6969231775717199e+13 km           
+        C3:         637.0515433903347 km^2/sec^2   Energy:         318.5257716951674 km^2/sec^2   
+   Vel. RA:         73.82075365806003 deg       Vel. Decl:         22.70105466333412 deg          
+ Rad. Peri:    1.2990138980043495e+08 km        Vel. Peri:       25.2400015919182898 km/sec       
+  Rad. Apo:   -1.2990264119192952e+08 km       Excess Vel:         25.23988001933319 km/sec       
+               Time Past Periapsis:           4211874.815015531 sec                               
+          Time Past Ascending Node:           2803574.144663556 sec                               
+   Beta Angle (Orbit plane to Sun):           0.213316598654403 deg                               
+Mean Sidereal Greenwich Hour Angle:            342.907911635192 deg                               
+                                                                                                  
+Geodetic Parameters:                                                                              
+  Latitude:         9.416865351994272 deg                                                         
+ Longitude:         39.85950646463364 deg                                                         
+  Altitude:    1.6784965271769449e+08 km                                                          
+Geocentric Parameters:                                                                            
+  Latitude:         9.416862999312412 deg                                                         
+ Longitude:         39.85950646463364 deg                                                         
+
+                                                                                                 
+                                                                                                  
+Spacecraft Configuration:                                                                         
+      Drag Area:  20 m^2                                                                          
+       SRP Area:  20 m^2                                                                          
+       Dry Mass:  500 kg                                                                          
+      Fuel Mass:  500 kg                                                                          
+     Total Mass:  1000 kg                                                                         
+Area/Mass Ratio:  2e-08 km^2/kg                                                                   
+  Tank Pressure:  5000                      Pa                                                    
+   Fuel Density:  1000                      kg/m^3                                                
+             Cr:  1.000000                                                                        
+             Cd:  2.200000                                                                        
+ Rad Press Area:  20 m^2                                                                          
+Rad Press Coeff:  1.000000                                                                        
