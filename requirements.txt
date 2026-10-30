@@ -10,5 +10,5 @@ poliastro>=0.17.0
 matplotlib>=3.7.0
 
 # Data Processing & Documentation
-pandas>=2.0.0
 python-docx>=0.8.11
+pytest>=7.0.0

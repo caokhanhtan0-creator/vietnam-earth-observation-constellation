@@ -12,7 +12,7 @@
 ---
 
 ## 🛰️ 1. Executive Summary & Mission Objective
-The **Vietnamese Earth Observation Constellation (VEOC)** is a space systems engineering capstone project designed to evaluate an operational Sun-Synchronous Orbit (SSO) small-satellite constellation. The mission delivers high-frequency optical imaging across the sovereign territory, mainland, maritime exclusive economic zone (EEZ), and offshore archipelagos (Paracel and Spratly Islands) of Vietnam ($8.5^\circ\text{N} – 23.5^\circ\text{N}, 102.0^\circ\text{E} – 118.0^\circ\text{E}$) over a 5-year primary operational lifespan.
+The **Vietnamese Earth Observation Constellation (VEOC)** is a space systems engineering capstone project designed to evaluate an operational Sun-Synchronous Orbit (SSO) small-satellite constellation. The mission targets high-cadence optical imaging across the sovereign territory, mainland, maritime exclusive economic zone (EEZ), and offshore archipelagos (Paracel and Spratly Islands) of Vietnam ($8.5^\circ\text{N} – 23.5^\circ\text{N}, 102.0^\circ\text{E} – 118.0^\circ\text{E}$) over a 5-year operational lifecycle.
 
 The constellation supports critical national capabilities:
 * **Disaster Response & Monitoring:** Rapid multi-pass imaging of typhoons, tropical depressions, river basin inundation, and coastal flooding.
@@ -99,12 +99,8 @@ Because optical imaging payloads operate in the visible and near-infrared (VNIR)
 ## 💻 6. Tools & Technologies Used
 
 * **Programming Language**: Python 3.11+
-* **Numerical Libraries**: `NumPy` (high-performance vector operations), `Pandas` (data aggregation)
-* **Astrodynamics Libraries**: Custom WGS-84 \\(J_2\\) orbit propagator, `Skyfield` / `SGP4` (verification)
-* **Visualization**: `Matplotlib`, `Seaborn`
-* **Documentation**: LaTeX, Pandoc, `python-docx`
-
-*(Note: In accordance with repository quality guidelines, third-party libraries not utilized directly in source code—such as Skyfield, SGP4, and Seaborn—have been omitted).*
+* **Numerical Libraries**: `NumPy` (high-performance vector operations)
+* **Astrodynamics Libraries**: Custom WGS-84 \\(J_2\\) orbit propagator
 
 ---
 
@@ -196,7 +192,7 @@ To maintain strict systems engineering rigor, two distinct propulsion metrics ar
 
 | Req ID | Parameter / Shall Statement | Threshold | Verification Method | Achieved System Value | Margin / Reserve | Compliance Status |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| **SYS-REQ-01** | Regional Mean Revisit Time | $< 30.0\text{ min}$ | 7-Day Sim (LVLH + Solar) | **$238.76\text{ min}$ (Daytime)** / $25.70\text{ min}$ (Geom FOR) | Revalidated with physical limits | **PASS (Daytime Baseline)** |
+| **SYS-REQ-01** | Regional Mean Revisit Time | $< 30.0\text{ min}$ | 7-Day Sim (LVLH + Solar) | **$238.76\text{ min}$ (Daytime)** / **$1163.74\text{ min}$ (Continuous)** | Negative Margin (Non-compliant) | **FAIL** |
 | **SYS-REQ-02** | 5-Year Altitude Deadband | $500\text{ km} \pm 5\text{ km}$ (Range $500-600$) | Analytical Aerodynamics | **$500.0\text{ km} \pm 5.0\text{ km}$** ($50\text{ m/s}$ budget) | $0.0\%$ (Nominal boundary) | **PASS** |
 | **SYS-REQ-03** | Total Delta-v Capacity | $\ge 300.0\text{ m/s}$ | Subsystem Mass Budget | **$300.0\text{ m/s}$ hardware** ($252\text{ m/s}$ budget) | $0.0\%$ (Boundary) / $+19.05\%$ reserve | **PASS** |
 | **SYS-REQ-04** | EOL Atmospheric Disposal | $< 2.0\text{ years}$ | Jacchia 1970 Decay Model | **$< 60\text{ days}$** ($h_p = 150\text{ km}$ perigee drop) | Well below $2.0\text{-year}$ requirement | **PASS** |
@@ -205,11 +201,32 @@ To maintain strict systems engineering rigor, two distinct propulsion metrics ar
 
 ---
 
+## 🔍 9. Architecture Revalidation Trade Study
+
+### Why Walker 18/3/1 Fails SYS-REQ-01 (< 30 min)
+1. **The Nocturnal Gap:** Solar elevation filtering ($\beta_{\odot} \ge 10.0^\circ$) eliminates nighttime passes. Nocturnal darkness (~12 hours) creates an unavoidable gap every night, mathematically preventing any low-Earth-orbit pure-optical constellation from achieving a 24/7 continuous mean revisit of $< 30\text{ minutes}$.
+2. **Local Time Geometry:** In a 3-plane SSO Walker constellation ($\Delta\Omega = 120^\circ$), planes are separated by 8 hours in Local Solar Time. Only 1–2 planes pass over Vietnam during daylight hours, limiting observation frequency.
+3. **Swath Width Constraints:** In the LVLH frame, $\pm 30.0^\circ$ cross-track roll yields a swath width of $\approx 585\text{ km}$, while the territorial longitude span of Vietnam ($102^\circ\text{E} - 118^\circ\text{E}$ at $16^\circ\text{N}$) is $1712\text{ km}$. A single satellite pass covers only $\approx 34\%$ of the target width.
+
+### Trade Space Exploration & Alternative Concepts
+* **Option 1: Optical Fleet Scaling ($N \ge 48 - 72$):** Achieving sub-30-minute revisit during daylight hours requires scaling to $\ge 48$ satellites across 6–8 SSO planes clustered between 09:00 and 15:00 LTAN. However, this violates mass and cost constraints ($N \le 24$) and leaves night coverage unaddressed.
+* **Option 2: Along-Track Pitch Steering:** Expanding pitch agility to $\pm 30^\circ$ or $\pm 45^\circ$ increases pass duration from 30 seconds to 3–4 minutes, but does not increase pass frequency.
+* **Option 3: Low-Inclination Non-SSO ($i \approx 20^\circ - 25^\circ$):** Placing satellites at an inclination matching Vietnam's latitude increases pass frequency over the target by $3\times$. However, it drifts through local solar times (non-SSO), fails to observe at night, and violates SYS-REQ-02.
+* **Option 4: Hybrid Optical + SAR Architecture (Recommended Solution):**  
+  Deploying a hybrid constellation comprising **12 Optical VNIR satellites** and **6 Synthetic Aperture Radar (SAR X-band) satellites** resolves the requirement:
+  * SAR provides active microwave illumination, enabling 24/7 day-and-night imaging through cloud cover and precipitation.
+  * Utilizing all 14.7 weekly passes (day and night) collapses the continuous revisit time to $< 1.5 - 2.0\text{ hours}$.
+* **Option 5: Requirement Re-baselining:**  
+  If the constellation remains purely optical ($N = 18$), SYS-REQ-01 should be formally re-baselined to:  
+  *"Achieve a mean daytime revisit time of $< 4.0\text{ hours}$ (240 minutes) during sunlit hours ($\beta_{\odot} \ge 10.0^\circ$)"*.
+
+---
+
 ## 🚀 11. Quickstart: Reproducing the 7-Day Simulation
 
 ### Prerequisites
 * Python 3.10+
-* `numpy`, `pandas`
+* `numpy`
 
 ### Installation & Execution
 ```bash
@@ -228,7 +245,7 @@ pip install -r requirements.txt
 pytest tests/
 
 # 5. Run the high-fidelity 7-day numerical simulation
-python3 src/session12.py
+python3 src/session12_v2.py
 ```
 
 ## 🛠️ Key Assumptions & Limitations
@@ -249,8 +266,7 @@ vietnam-earth-observation-constellation/
 ├── README.md                 # Project overview and instructions
 ├── requirements.txt          # Python dependency packages (NumPy, Pandas, etc.)
 ├── src/                      # Simulation source code
-│   ├── session1.py ~ s10.py  # Calculation and verification modules
-│   └── session12.py          # Main script for 48-hour orbit propagation simulation
+│   ├── session1.py ~ s10.py  # Calculation and verification orbit propagation simulation
 ├── results/                  # Simulation output data (132-grid & strategic targets)
 ├── figures/                  # Orbit plots, J2 perturbation graphs, and coverage maps
 ├── docs/                     # Astrodynamics theory and reference documents
